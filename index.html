@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SPACE TOWN ROLEPLAY | GTA SA-MP Server</title>
+  <meta name="description" content="เว็บไซต์เซิร์ฟเวอร์ GTA SA-MP แนว Roleplay สำหรับ SPACE TOWN" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="cursor-glow"></div>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="SPACE TOWN Logo" />
+        <span>SPACE<span>TOWN</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">หน้าแรก</a></li>
+        <li><a href="#about">เกี่ยวกับ</a></li>
+        <li><a href="#features">ระบบเด่น</a></li>
+        <li><a href="#jobs">อาชีพ</a></li>
+        <li><a href="#rules">กฎเซิร์ฟ</a></li>
+        <li><a href="#join">เข้าเล่น</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content reveal">
+        <div class="server-badge">
+          <span class="live-dot"></span>
+          GTA SA-MP ROLEPLAY SERVER
+        </div>
+
+        <h1>
+          ยินดีต้อนรับสู่ <br />
+          <span>SPACE TOWN</span>
+        </h1>
+
+        <p>
+          เมืองโรลเพลย์แห่งอนาคต ระบบครบ เล่นง่าย สังคมดี
+          พร้อมอาชีพ ระบบเศรษฐกิจ บ้าน รถ แก๊ง ร้านค้า และกิจกรรมทุกวัน
+        </p>
+
+        <div class="server-card">
+          <div>
+            <small>SERVER IP</small>
+            <strong id="serverIp">play.spacetown-rp.com:7777</strong>
+          </div>
+          <button class="copy-btn" id="copyIpBtn">คัดลอก IP</button>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#join" class="btn primary">เริ่มเข้าเล่น</a>
+          <a href="#features" class="btn secondary">ดูระบบเซิร์ฟ</a>
+        </div>
+      </div>
+
+      <div class="hero-logo reveal">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <img src="assets/logo.png" alt="SPACE TOWN" />
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <div class="stat-box">
+        <h3 id="onlinePlayers">128</h3>
+        <p>ผู้เล่นออนไลน์</p>
+      </div>
+      <div class="stat-box">
+        <h3>24/7</h3>
+        <p>เปิดให้บริการ</p>
+      </div>
+      <div class="stat-box">
+        <h3>50+</h3>
+        <p>ระบบในเมือง</p>
+      </div>
+      <div class="stat-box">
+        <h3>RP</h3>
+        <p>สังคมโรลเพลย์</p>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span>ABOUT SERVER</span>
+        <h2>เมืองแห่งอนาคตสำหรับชาว SA-MP</h2>
+        <p>
+          SPACE TOWN ถูกออกแบบให้เป็นเซิร์ฟเวอร์ Roleplay ที่มีบรรยากาศไซไฟ
+          เล่นสนุก มีเป้าหมาย และเหมาะกับทั้งผู้เล่นใหม่และผู้เล่นสายจริงจัง
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>เริ่มง่าย</h3>
+          <p>มีระบบแนะนำผู้เล่นใหม่ จุดเริ่มต้นชัดเจน และคำสั่งพื้นฐานครบ</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>ระบบเยอะ</h3>
+          <p>รองรับระบบงาน ระบบบ้าน รถ ธนาคาร ร้านค้า แก๊ง และกิจกรรมประจำวัน</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>ดูแลดี</h3>
+          <p>ทีมงานคอยช่วยเหลือ ตรวจสอบปัญหา และอัปเดตระบบใหม่อย่างต่อเนื่อง</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head reveal">
+        <span>SERVER FEATURES</span>
+        <h2>ระบบเด่นภายในเมือง</h2>
+        <p>ฟีเจอร์สำคัญที่ทำให้การเล่นสนุกและมีเป้าหมายมากขึ้น</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <div class="feature-icon">🏦</div>
+          <h3>ระบบธนาคาร</h3>
+          <p>ฝาก ถอน โอนเงิน พร้อมประวัติธุรกรรม ใช้งานง่ายและปลอดภัย</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">🚗</div>
+          <h3>ระบบรถส่วนตัว</h3>
+          <p>ซื้อขายรถ แต่งรถ จอดรถ และจัดการรถผ่านเมนูภายในเกม</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">🏠</div>
+          <h3>ระบบบ้าน</h3>
+          <p>ซื้อบ้าน เก็บของ แต่งบ้าน และตั้งจุดเกิดส่วนตัว</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">🛒</div>
+          <h3>ระบบร้านค้า</h3>
+          <p>ร้านค้า อาหาร อุปกรณ์ ยา และไอเท็มต่างๆ สำหรับใช้ในเมือง</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">👥</div>
+          <h3>ระบบแก๊ง</h3>
+          <p>สร้างกลุ่ม คุมพื้นที่ ทำภารกิจ และแข่งขันกับกลุ่มอื่น</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="feature-icon">🎁</div>
+          <h3>กิจกรรมประจำวัน</h3>
+          <p>กิจกรรมแจกของรางวัล ภารกิจพิเศษ และอีเวนต์จากทีมงาน</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section jobs-section" id="jobs">
+      <div class="section-head reveal">
+        <span>CAREERS</span>
+        <h2>เลือกเส้นทางชีวิตของคุณ</h2>
+        <p>เริ่มจากประชาชนธรรมดา แล้วเติบโตในแบบของตัวเอง</p>
+      </div>
+
+      <div class="job-list">
+        <div class="job-card reveal">
+          <h3>👮 ตำรวจ</h3>
+          <p>รักษากฎหมาย ไล่ล่าอาชญากร และดูแลความสงบในเมือง</p>
+        </div>
+        <div class="job-card reveal">
+          <h3>🚑 หมอ</h3>
+          <p>ช่วยเหลือผู้เล่น รักษาคนเจ็บ และรับเคสฉุกเฉิน</p>
+        </div>
+        <div class="job-card reveal">
+          <h3>🔧 ช่าง</h3>
+          <p>ซ่อมรถ แต่งรถ และให้บริการผู้เล่นทั่วเมือง</p>
+        </div>
+        <div class="job-card reveal">
+          <h3>🚚 ขนส่ง</h3>
+          <p>ทำภารกิจส่งของ เก็บเงิน และสร้างรายได้อย่างมั่นคง</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="rules">
+      <div class="section-head reveal">
+        <span>RULES</span>
+        <h2>กฎพื้นฐานของเซิร์ฟเวอร์</h2>
+        <p>เพื่อให้ทุกคนเล่นสนุกและอยู่ร่วมกันได้อย่างดี</p>
+      </div>
+
+      <div class="rules-box reveal">
+        <div class="rule-item">
+          <b>01</b>
+          <span>ห้ามใช้โปรแกรมช่วยเล่น บั๊ก หรือช่องโหว่ทุกชนิด</span>
+        </div>
+        <div class="rule-item">
+          <b>02</b>
+          <span>เคารพผู้เล่นคนอื่นและทีมงาน ห้ามด่าทอหรือก่อกวน</span>
+        </div>
+        <div class="rule-item">
+          <b>03</b>
+          <span>เล่นตามบทบาท หลีกเลี่ยงการกระทำที่ทำลายบรรยากาศ RP</span>
+        </div>
+        <div class="rule-item">
+          <b>04</b>
+          <span>พบปัญหาให้แจ้งทีมงานพร้อมหลักฐาน เช่น ภาพหรือคลิป</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="join-section" id="join">
+      <div class="join-card reveal">
+        <img src="assets/logo.png" alt="SPACE TOWN Logo" />
+        <div>
+          <span>JOIN NOW</span>
+          <h2>พร้อมเข้าเมือง SPACE TOWN แล้วหรือยัง?</h2>
+          <p>คัดลอก IP แล้วเพิ่มเข้า Favorites ใน SA-MP Client ได้ทันที</p>
+
+          <div class="join-ip">
+            <code id="serverIpBottom">play.spacetown-rp.com:7777</code>
+            <button class="copy-btn" id="copyIpBtnBottom">คัดลอก</button>
+          </div>
+
+          <div class="socials">
+            <a href="#">Discord</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 SPACE TOWN ROLEPLAY. All Rights Reserved.</p>
+    <p>GTA SA-MP Server Website Template</p>
+  </footer>
+
+  <div class="toast" id="toast">คัดลอก IP แล้ว</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
